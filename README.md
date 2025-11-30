@@ -19,7 +19,7 @@ Keiry Yamilet Saínz Ursua
 
 Karol Daniela Johnston Navarro
 
-Nereyda Celestina Pérez Gónzalez
+Nereyda Celestina Pérez Gónzalez (nery17pg)
 
 ## Instrucciones para Crear la Base de Datos (phpMyAdmin)
 La base de datos ya está exportada en los archivos, pero si le ocasiona algún error puede crearla desde 0.
