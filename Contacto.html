@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Protección Civil UdeC</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<header>
+    <div id="modulo-menu"></div>
+</header>
+<body>
+    <div class="container">
+        <div class="page-header">
+            <h1>Contáctanos</h1>
+            <p class="page-subtitle">Estamos aquí para ayudarte</p>
+        </div>
+
+        <div class="contact-wrapper">
+            <!-- Información de Contacto -->
+            <div class="contact-info-section">
+                <div class="contact-card">
+                    <div class="contact-icon"></div>
+                    <h3>Dirección</h3>
+                    <p>Av. Universidad 333</p>
+                    <p>Col. Las Víboras</p>
+                    <p>Colima, Colima, México</p>
+                    <p>C.P. 28040</p>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon"></div>
+                    <h3>Teléfonos</h3>
+                    <p><strong>Oficina:</strong> (312) 316-1000</p>
+                    <p><strong>Emergencias:</strong> 911</p>
+                    <p><strong>Cruz Roja:</strong> (312) 314-2929</p>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon"></div>
+                    <h3>Correo Electrónico</h3>
+                    <p><a href="mailto:proteccioncivil@ucol.mx">proteccioncivil@ucol.mx</a></p>
+                    <p><a href="mailto:emergencias@ucol.mx">emergencias@ucol.mx</a></p>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon"></div>
+                    <h3>Horario de Atención</h3>
+                    <p><strong>Lunes a Viernes:</strong> 8:00 AM - 6:00 PM</p>
+                    <p><strong>Sábados:</strong> 9:00 AM - 2:00 PM</p>
+                    <p><strong>Emergencias:</strong> 24/7</p>
+                </div>
+
+                
+            </div>
+
+            <!-- Formulario de Contacto -->
+            <div class="contact-form-section">
+                <h2>Envíanos un Mensaje</h2>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="nombre">
+                            <span class="label-icon"></span> Nombre Completo *
+                        </label>
+                        <input class="styled-input" type="text" id="nombre" name="nombre" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">
+                            <span class="label-icon"></span> Correo Electrónico *
+                        </label>
+                        <input class="styled-input" type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefono">
+                            <span class="label-icon"></span> Teléfono
+                        </label>
+                        <input class="styled-input" type="tel" id="telefono" name="telefono">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="asunto">
+                            <span class="label-icon"></span> Asunto *
+                        </label>
+                        <select  class="styled-input" id="asunto" name="asunto" required>
+                            <option value="" disabled selected>Selecciona un asunto</option>
+                            <option value="informacion">Solicitud de Información</option>
+                            <option value="capacitacion">Capacitación</option>
+                            <option value="emergencia">Reporte de Emergencia</option>
+                            <option value="queja">Queja o Sugerencia</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje">
+                            <span class="label-icon"></span> Mensaje *
+                        </label>
+                        <textarea class="styled-input" id="mensaje" name="mensaje" rows="6" required 
+                                  placeholder="Escribe tu mensaje aquí..."></textarea>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="submit-btn">
+                             Enviar Mensaje
+                        </button>
+                        <button type="reset" class="reset-btn">
+                            Limpiar Formulario
+                        </button>
+                    </div>
+
+                    <p class="form-note">* Campos obligatorios</p>
+                </form>
+            </div>
+        </div>
+        <div class="contact-card social-card">
+                    <div class="contact-icon"></div>
+                    <h2>Síguenos en nuestras Redes Sociales</h2>
+                    <!-- <div class="social-links">
+        
+                        <a href="https://www.facebook.com/profile.php?id=100077086370710&sk=photos" class="social-btn facebook">Facebook</a>
+                        <a href="https://www.instagram.com/proteccion_civil_udc?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-btn instagram">Instagram</a>
+                    </div> -->
+
+                    <div class="social-stuff">
+                        <p><a href="https://www.facebook.com/profile.php?id=100077086370710&sk=photos" class="social-btn facebook">
+                            <img class="social-icon-face" src="imagenessiniestros/face.webp" alt="Facebook">
+                        </a><strong class="redesSociales">Facebook</strong></p>
+                        <p>
+                        <a href="https://www.instagram.com/proteccion_civil_udc?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-btn instagram">
+                    <img class="social-icon-insta" src="imagenessiniestros/insta.png" alt="Instagram">
+                            
+                        </a><strong class="redesSociales">Instagram</strong></p>
+                    </div>
+                </div>
+
+        <!-- Mapa -->
+        <section class="map-section">
+            <h2>Ubicación</h2>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3756.2856728887246!2d-103.72456668509845!3d19.245071186987908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x84255a8c68d3dc2b%3A0x8e4b4b3e6f3e5c7d!2sUniversidad%20de%20Colima!5e0!3m2!1ses!2smx!4v1234567890"
+                    width="100%" 
+                    height="450" 
+                    style="border:0; border-radius:15px;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="faq-section">
+            <h2>Preguntas Frecuentes</h2>
+            <div class="faq-grid">
+                <div class="faq-card">
+                    <h4>¿Cómo me inscribo a un curso?</h4>
+                    <p>Visita nuestra sección de cursos, selecciona el de tu interés y haz clic en "Inscribirme". También puedes llamar al (312) 316-1000.</p>
+                </div>
+                <div class="faq-card">
+                    <h4>¿Los cursos tienen costo?</h4>
+                    <p>Los cursos son gratuitos para la comunidad universitaria de la UdeC. Para externos, contáctanos para más información.</p>
+                </div>
+                <div class="faq-card">
+                    <h4>¿Qué hago en caso de emergencia?</h4>
+                    <p>Llama inmediatamente al 911 o a nuestro número de emergencias (312) 316-1000. Disponible 24/7.</p>
+                </div>
+                <div class="faq-card">
+                    <h4>¿Puedo ser voluntario?</h4>
+                    <p>¡Sí! Visita nuestra sección "Únete al Equipo" o contáctanos para conocer las opciones de voluntariado.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Protección Civil - Universidad de Colima</p>
+    </footer>
+
+    <script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    const form = document.getElementById("contactForm");
+    const modal = document.getElementById("modal");
+
+    if (!form || !modal) return;
+
+    form.addEventListener("submit", function(e) {
+        e.preventDefault();
+
+        // Insertar contenido en el modal
+        modal.innerHTML = `
+            <h2>¡Recibimos tu mensaje!</h2>
+            <p>Nos alegra que te pusieras en contacto,<br> te responderemos pronto :)</p>
+            <button id="continuar">Continuar</button>
+        `;
+
+        modal.showModal();
+
+        // Botón dentro del modal
+        modal.querySelector("#continuar").addEventListener("click", () => {
+            modal.close();
+        });
+
+        // Limpiar el formulario
+        this.reset();
+    });
+
+});
+</script>
+
+<script src="script.js"></script>
+
+    <dialog id="modal"></dialog>
+</body>
+</html>
