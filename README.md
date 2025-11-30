@@ -22,9 +22,9 @@ En general no es un proyecto muy complicado y aún hay aspectos que son "rabbit 
 Cómo crear la base de datos (PHPMyAdmin)
 
 Nombre de la base de datos: 
-*** proteccion_civil ***
+**proteccion_civil**
 
-Crear tabla "instructor" con los siguientes campos:
+Crear tabla *"instructor"* con los siguientes campos:
 - id_instructor (int, 11, llave primaria, auto incremento)
 - nombre (varchar, 60)
 - tipo (varchar, 30)
@@ -33,7 +33,7 @@ Crear tabla "instructor" con los siguientes campos:
 - telefono (varchar, 30)
 - correo (varchar, 30)  
 
-Crear tabla "curso" con los siguientes campos:
+Crear tabla *"curso"* con los siguientes campos:
 - id_curso (int, 11, llave primaria, auto incremento)
 - id_instructor (int, 11, llave foránea)
 - modalidad (varchar, 10)
@@ -41,14 +41,14 @@ Crear tabla "curso" con los siguientes campos:
 - topico (varchar, 100)
 - lugar (varchar, 60)
 
-Crear tabla "lider_brigada"
+Crear tabla *"lider_brigada"*
 - id_lider (int, 11, llave primaria, auto incremento)
 - nombre_lider (varchar, 60)
 - telefono_lider (varchar,10)
 - correo_lider (varchar, 30)
 - especialidad (varchar,100)
 
-Crear tabla "brigada"
+Crear tabla *"brigada"*
 - id_brigada (int, 11)
 - id_lider (int, 11, llave foránea)
 - nombre_brigada (varchar, 120)
