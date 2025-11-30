@@ -1,62 +1,120 @@
-# Proyecto_Proteccion_Civil
-Se trata de un proyecto universitario en el que se requirió programar un sistema para la Protección Civil de nuestro estado, Colima.
 
-Se solicitó que fuera una página usable tanto para los miembros de la Protección Civil como para el público en general.
+# Proyecto Protección Civil
 
-Se diseñó y desarrolló un software bastante sencillo, el cual utiliza una base de datos creada en phpMyAdmin de una forma fácil y gráfica.
-Se montó un servidor local usando xampp, para el proyecto se necesitó únicamente Apache y MySQL (aunque también se configuró un servidor para mail en el mismo xampp)
+Este es un proyecto universitario desarrollado con el objetivo de crear un sistema funcional para la Protección Civil del estado de Colima.
+El sistema está diseñado para ser utilizado tanto por miembros de Protección Civil como por el público en general.
 
-Por supuesto, al tratarse de una página web se utilizaron HTML y CSS para la interfaz, es destacable el como no se utilizó ninguna librería de estilos, todo fue hecho con CSS puro (por petición del profesor).
+Se construyó un software sencillo que utiliza una base de datos creada en phpMyAdmin. Para su ejecución se montó un servidor local mediante XAMPP, utilizando únicamente Apache y MySQL (aunque también se configuró un servidor de correo dentro del mismo paquete).
 
-Para las peticiones, procesamiento, y funcionalidades en general, se emplearon PHP y JavaScript, nuevamente se evitó el uso de librerías externas o frameworks
+Para la interfaz se emplearon HTML y CSS, sin usar librerías externas de estilos (por petición del profesor).
+Las funcionalidades, procesamiento y peticiones se implementaron con PHP y JavaScript, nuevamente evitando frameworks o librerías externas.
 
-En general no es un proyecto muy complicado y aún hay aspectos que son "rabbit holes", pero el resultado final es un sistema funcional que cumple con los requerimientos y restricciones solicitados.
+Aunque no es un proyecto complejo, aún existen áreas que pueden profundizarse. Aun así, el resultado es un sistema funcional que cumple con todos los requerimientos solicitados.
 
-**Desarrollado por:**
-    Mayte Muñoz Rosales
-    Keiry Yamilet Saínz Ursua
-    Karol Daniela Johnston Navarro
-    Nereyda Celestina Pérez Gónzalez
+## Desarrollado por
+
+Mayte Muñoz Rosales
+
+Keiry Yamilet Saínz Ursua
+
+Karol Daniela Johnston Navarro
+
+Nereyda Celestina Pérez Gónzalez
+
+## Instrucciones para Crear la Base de Datos (phpMyAdmin)
+La base de datos ya está exportada en los archivos, pero si le ocasiona algún error puede crearla desde 0.
+
+Nombre de la base de datos:    **proteccion_civil**
+
+**Tabla: *instructor***
+
+- id_instructor      int(11), PRIMARY KEY, AUTO_INCREMENT
+
+- nombre             varchar(60)
+
+- tipo               varchar(30)
+
+- vigencia           varchar(10)
+
+- procedencia        varchar(50)
+
+- telefono           varchar(30)
+
+- correo             varchar(30)
 
 
-Cómo crear la base de datos (PHPMyAdmin)
+**Tabla: *curso***
 
-Nombre de la base de datos: 
-**proteccion_civil**
+- id_curso           int(11), PRIMARY KEY, AUTO_INCREMENT
 
-Crear tabla *"instructor"* con los siguientes campos:
-- id_instructor (int, 11, llave primaria, auto incremento)
-- nombre (varchar, 60)
-- tipo (varchar, 30)
-- vigencia (varchar, 10)
-- procedencia (varchar, 50)
-- telefono (varchar, 30)
-- correo (varchar, 30)  
+- id_instructor      int(11), FOREIGN KEY
 
-Crear tabla *"curso"* con los siguientes campos:
-- id_curso (int, 11, llave primaria, auto incremento)
-- id_instructor (int, 11, llave foránea)
-- modalidad (varchar, 10)
-- descripción (varchar, 255)
-- topico (varchar, 100)
-- lugar (varchar, 60)
+- modalidad          varchar(10)
 
-Crear tabla *"lider_brigada"*
-- id_lider (int, 11, llave primaria, auto incremento)
-- nombre_lider (varchar, 60)
-- telefono_lider (varchar,10)
-- correo_lider (varchar, 30)
-- especialidad (varchar,100)
+- descripción        varchar(255)
 
-Crear tabla *"brigada"*
-- id_brigada (int, 11)
-- id_lider (int, 11, llave foránea)
-- nombre_brigada (varchar, 120)
-- descripcion_brigada (varchar, 255)
-- ubicacion_brigada (varchar, 100)
-- n_miembros (int, 4)
-- fecha_creacion (date)
+- topico             varchar(100)
 
-Recuerde configurar el servidor de correos en xampp y cambiar el puerto en el archivo conexion.php ya que no utiliza el puerto por default de MySQL
+- lugar              varchar(60)
 
-Que tenga buen día :)
+
+**Tabla: *lider_brigada***
+
+- id_lider           int(11), PRIMARY KEY, AUTO_INCREMENT
+
+- nombre_lider       varchar(60)
+
+- telefono_lider     varchar(10)
+
+- correo_lider       varchar(30)
+
+- especialidad       varchar(100)
+
+
+**Tabla: *brigada***
+
+- id_brigada         int(11)
+
+- id_lider           int(11), FOREIGN KEY
+
+- nombre_brigada     varchar(120)
+
+- descripcion_brigada varchar(255)
+
+- ubicacion_brigada  varchar(100)
+
+- n_miembros         int(4)
+
+- fecha_creacion     date
+
+
+## Notas Adicionales
+
+Recuerde configurar el servidor de correos en XAMPP.
+
+Cambie el puerto en conexion.php, ya que este proyecto no utiliza el puerto por defecto de MySQL.
+
+
+## Demostración
+**Vídeo del sistema en funcionamiento:**
+
+https://drive.google.com/file/d/1diRrTc7AMPoyqrlgVv0wD7hfZU5otkwL/view?usp=sharing
+
+El bug de la fecha ya está arreglado en esta versión, al igual que se cambió el texto incorrecto.
+
+Eso sería todo lo que teníamos que decir, que tenga un excelente día :).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
