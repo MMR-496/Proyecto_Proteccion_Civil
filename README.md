@@ -17,7 +17,7 @@ Mayte Muñoz Rosales
 
 Keiry Yamilet Saínz Ursua
 
-Karol Daniela Johnston Navarro
+Karol Daniela Johnston Navarro (knavarro777)
 
 Nereyda Celestina Pérez Gónzalez (nery17pg)
 
